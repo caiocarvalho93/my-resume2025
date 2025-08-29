@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cai Carvalho — Secret Links</title>
+  <meta name="description" content="All of Cai (Caitrippie) Carvalho’s important links in one place — code, music, socials." />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script defer src="script.js"></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" />
+  
+  <meta property="og:title" content="Cai Carvalho — Secret Links">
+  <meta property="og:description" content="Software Engineer • Founder @ Jamdrop.ai • Artist: Caitrippie">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <main class="container">
+
+    <header class="hero" role="banner">
+
+      <a id="avatarLink" href="./assets/avatar.jpg.JPG" download="CaiCarvalho.jpg" aria-label="Download high-resolution photo">
+        <img id="avatar" class="avatar" src="./assets/avatar.jpg.JPG" alt="Cai Carvalho" width="150" height="150" />
+      </a>
+      <h1 class="title">Cai Carvalho</h1>
+      <p class="subtitle">Software Engineer • Founder @ Jamdrop.ai • Artist: Caitrippie</p>
+      <p class="tagline">Glitch-futuristic tools & music. Hand-picked secret links below.</p>
+
+      <div class="controls">
+        <label class="search">
+          <input id="searchInput" type="search"
+            placeholder="Search links (e.g., GitHub, Spotify, resume)"
+            aria-label="Search links" />
+          <span class="kbd">/</span>
+        </label>
+        <button id="shareBtn" class="btn" type="button" aria-label="Share this page">Share</button>
+        <label class="switch" title="Toggle theme">
+          <input id="themeToggle" type="checkbox" aria-label="Toggle light/dark theme" />
+          <span class="slider"></span>
+          <span class="switch-label">Dark</span>
+        </label>
+        <button id="brToggle" class="btn flag-btn" type="button" aria-pressed="false" title="Toggle Brazil mode">🇧🇷 Brazil</button>
+
+        <button id="marioToggle" class="btn flag-btn" type="button" aria-pressed="false" title="Toggle Mario mode">🍄 Mario</button>
+      </div>
+
+      <div id="stats" class="stats" aria-live="polite"></div>
+    </header>
+
+
+    <section aria-label="Important links">
+      <div id="linksGrid" class="links"></div>
+    </section>
+
+
+    <section class="badges" aria-label="Highlights">
+      <div class="badge">Full-stack: Java • .NET • Angular</div>
+      <div class="badge">AI Music • S3 • DSP</div>
+      <div class="badge">Dark mode 🖤</div>
+    </section>
+
+
+    <footer class="footer">
+      <p>Built with pure HTML + CSS + JS • © <span id="year"></span> Cai Carvalho</p>
+    </footer>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
